@@ -1,6 +1,7 @@
 import React,{useState,useContext} from 'react'
 import { UserContext } from '../context/AuthContext';
 import axios from "axios"
+import "../styles/login.css"
 
 const Login = () => {
     const[username ,setUsername] = useState("");
@@ -31,8 +32,8 @@ const Login = () => {
 
   return (
     <div>
-      <h1>Login</h1>
       <form onSubmit={handleLogin}>
+        <h1>Login</h1>
         <input
           type="text"
           placeholder="Enter Username"

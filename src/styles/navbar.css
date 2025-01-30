@@ -1,0 +1,19 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: teal;
+    padding: 10px;
+}
+.navlink{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+
+}
+.active{
+    color:pink;
+    font-weight: bold;
+    text-decoration: underline;
+}
