@@ -1,9 +1,10 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { UserContext } from '../context/AuthContext'
+import { Navigate } from 'react-router-dom'
 
-const PrivateRoute = () => {
-  return (
-    <div>PrivateRoute</div>
-  )
+const PrivateRoute = ({children}) => {
+    const {isLogin} = useContext(UserContext)
+  return isLogin? children : <Navigate to="/login"/>
 }
 
 export default PrivateRoute
